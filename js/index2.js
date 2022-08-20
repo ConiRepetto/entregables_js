@@ -1,3 +1,5 @@
+// atajo para comentar ctrl+k + c
+
 //Clase 2 - 16/08 
 
 //Comparacion
@@ -49,5 +51,4 @@ if (numero >= 10 && numero <= 50){
 }else {
     console.warn('numero no aceptado')
 }
-
 
