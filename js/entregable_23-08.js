@@ -6,7 +6,11 @@ function promedioAlumno(){
     nota2 = parseInt(prompt('Ingresa la 2da nota:'));
     nota3 = parseInt(prompt('Ingresa la 3er nota:'));
     promedio = (nota1 + nota2 + nota3) / 3;
-    console.log('Promedio de ' + alumno + ': ' + promedio)
+    if(promedio >= 7){
+        console.log(alumno + ': Aprobado - Promedio: ' + promedio)
+    } else {
+        console.log(alumno + ': Desaprobado - Promedio: ' + promedio)
+    }
 }
 
 
