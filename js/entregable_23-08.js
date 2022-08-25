@@ -2,9 +2,15 @@
 
 function promedioAlumno(){
     alumno = prompt('Ingresa el nombre del Alumno:');
-    nota1 = parseInt(prompt('Ingresa la 1er nota:'));
-    nota2 = parseInt(prompt('Ingresa la 2da nota:'));
-    nota3 = parseInt(prompt('Ingresa la 3er nota:'));
+    nota1 = parseInt(prompt('Ingresa la 1er nota (1 a 10):'));
+    nota2 = parseInt(prompt('Ingresa la 2da nota (1 a 10):'));
+    nota3 = parseInt(prompt('Ingresa la 3er nota (1 a 10):'));
+    while(nota1 > 10 || nota2 > 10 || nota3 > 10){
+        alert('Nota ingresada invalida. Ingresa numeros entre 1 y 10')
+        nota1 = parseInt(prompt('Ingresa la 1er nota (1 a 10):'));
+        nota2 = parseInt(prompt('Ingresa la 2da nota (1 a 10):'));
+        nota3 = parseInt(prompt('Ingresa la 3er nota (1 a 10):'));
+    }
     promedio = (nota1 + nota2 + nota3) / 3;
     if(promedio >= 7){
         console.log(alumno + ': Aprobado - Promedio: ' + promedio)
