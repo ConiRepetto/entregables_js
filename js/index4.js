@@ -44,6 +44,15 @@ function realizarCulculo(num1, num2, ope) {
     }
 }
 
+function ElegirAutoyperiodo(modelo, tamano, dias) {
+    switch (dias) {
+        case dias >= 10:
+            return $100
+        case dias >= 20:
+            return $200
+    }
+}
+
 //Funciones ANONIMAS
 let iva = 1.21
 
