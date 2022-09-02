@@ -18,12 +18,24 @@ const producto4 = new Plato("sorrentinos", 1500, 'calabaza, mozarella');
 let mesa1 = []
 let mesa2 = []
 
-function pedido(mesa, productos){
-    let mesa
-    mesa1.push(producto1, producto2, producto4)
+function pedido(mesa){
+    let mesa = parseInt(prompt('Ingresa numero de mesa:'))
+    let productos = []
+    while (productos != 'listo'){
+        productos = productos.push(prompt('Ingresa un plato:'))
+    }
+    function mesaElegida(){
+        switch(mesa){
+            case 1:
+                return mesa1.push(productos)
+                console.table(mesa1)
+            case 2:
+                return mesa2.push(productos)
+                console.table(mesa2)
+            case 3:
+                return mesa3.push(productos)
+                console.table(mesa3)
+        }
+    }  
+    console.log(mesaElegida())
 }
-
-
-
-console.log(mesa1)
-console.table(mesa1)
