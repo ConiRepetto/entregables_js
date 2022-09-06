@@ -39,3 +39,4 @@ function pedido(mesa){
     }  
     console.log(mesaElegida())
 }
+//AFTER 2/09 > 20:12 QUE PONER EN EL PROYECTO FINAL
